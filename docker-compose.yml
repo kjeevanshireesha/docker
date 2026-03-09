@@ -1,0 +1,25 @@
+services:
+
+  jboss1:
+    image: sirishaimages:v2
+    container_name: jbosscont1
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+
+  jboss2:
+    image: sirishaimages:v2
+    container_name: jbosscont2
+    ports:
+      - "8081:8080"
+      - "9991:9990"
+
+  apache:
+    image: httpd
+    container_name: apachecont
+    ports:
+      - "80:80"
+
+  tomcat:
+    image: tomcat:9.0.115-jdk8-corretto-al2
+  
