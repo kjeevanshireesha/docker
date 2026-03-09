@@ -1,0 +1,12 @@
+---
+schemaVersion: "2.0.0"
+name: "eap-8.1"
+repositories:
+  - id: "mrrc"
+    url: "https://maven.repository.redhat.com/ga/"
+manifest:
+  maven:
+    groupId: "org.jboss.eap.channels"
+    artifactId: "eap-8.1"
+    version: "1.0.0.GA-redhat-00012"
+resolve-if-no-stream: "none"
